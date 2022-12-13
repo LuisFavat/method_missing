@@ -77,6 +77,9 @@ describe 'method_missing' do
     expect(chino.arigato(2)).to raise_error(SystemStackError)
 
   end
+  
+  # que pasa si la super clase define un metodo?
+  
 
 
   #En que caso puedo usar esto.
@@ -106,6 +109,8 @@ describe 'method_missing' do
 
     expect(enemigo.vida).to eq(98)
   end
+  
+  #se puede delegar la responsabilidad a otro objeto tipo guerrero.new(defenza)
 
   #como creen que funciona?
   #mini explicacion -> el metodo que falta se busca en toda la jerarquia hasta llegar a basicObject
